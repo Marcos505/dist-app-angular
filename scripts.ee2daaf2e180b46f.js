@@ -1,0 +1,1 @@
+function mudaTema(l){let e="assets/css/estilo-tema-"+l+".css";document.querySelector("#link-tema").href=e}window.onload=function(){document.querySelector("select#tema").addEventListener("change",t=>{let a=t.target.value;a&&(mudaTema(a),localStorage.setItem("tema",a))});let e=localStorage.getItem("tema");e&&mudaTema(e)};
